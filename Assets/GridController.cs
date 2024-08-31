@@ -9,10 +9,12 @@ public class GridController : MonoBehaviour
     [SerializeField] private Tile _tilePrefab;
     [SerializeField] private Transform _cam;
 
+
     private Tile[,] _tiles;
 
     private void Start()
     {
+        Debug.Log(gameObject.GetType().Name);
         _tiles = new Tile[width, height];
         GenerateGrid();
     }
@@ -29,7 +31,7 @@ public class GridController : MonoBehaviour
                 spawnedTile.name = $"Tile {x} {y}";
 
                 bool isOffset = (x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0);
-                spawnedTile.Init(isOffset);
+                spawnedTile.Init(isOffset, x, y, gameObject);
 
                 _tiles[x, y] = spawnedTile; 
             }
