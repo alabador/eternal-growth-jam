@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 
 public class GridController : MonoBehaviour
@@ -11,28 +10,27 @@ public class GridController : MonoBehaviour
 
     [SerializeField] GameObject[] _tileOptions;
 
-    private Tile[,] _tiles;
+    private GameObject[,] _tiles;
 
     private void Start()
     {
         Debug.Log(gameObject.GetType().Name);
-        _tiles = new Tile[width, height];
+        _tiles = new GameObject[width, height];
         GenerateGrid();
     }
 
     private void GenerateGrid()
     {
-        Debug.Log(width);
-        Debug.Log(height);
         for(int x = 0; x < width; x++)
         {
             for (int y = 0; y < height; y++)
             {
-                Tile spawnedTile = Instantiate(_tilePrefab, new Vector3(x, y), Quaternion.identity);
-                spawnedTile.name = $"Tile {x} {y}";
+                GameObject selectedTile = _tileOptions[UnityEngine.Random.Range(0, _tileOptions.Length)];
+                GameObject spawnedTile = Instantiate(selectedTile, new Vector3(x, y), Quaternion.identity);
+                spawnedTile.name = $"{spawnedTile.name} {x} {y}";
 
                 bool isOffset = (x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0);
-                spawnedTile.Init(x, y, gameObject);
+                spawnedTile.GetComponent<Tile>().Init(x, y, gameObject);
 
                 _tiles[x, y] = spawnedTile; 
             }
@@ -42,7 +40,7 @@ public class GridController : MonoBehaviour
     }
 
 
-    public Tile GetTileAtPosition(int x, int y)
+    public GameObject GetTileAtPosition(int x, int y)
     {
         Debug.Log(_tiles[x, y].name);
         return _tiles[x, y];

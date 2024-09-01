@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 938178792578437194, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 998034199712925185, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -53,7 +57,43 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1401073588, guid: 7ec1025e6a065414d88268c05cf32ab5, type: 3}
     - target: {fileID: 3470360198114685656, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470360198114685656, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470360198114685656, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470360198114685656, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3470360198114685656, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
       propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451477536699594702, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.a
+      value: 0.050980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451477536699594702, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451477536699594702, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451477536699594702, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451477536699594702, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_SortingOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4872051903512574864, guid: 2375969c02548d848a35c44a8fa78903, type: 3}

@@ -36,9 +36,9 @@ public class Tile : MonoBehaviour
         // Returns the tile that is being clicked.
 
         // Use this below if accessing the tile in GridController's array is important.
-        Tile curr_tile = _gridController.GetComponent<GridController>().GetTileAtPosition(_x, _y);
-        curr_tile._renderer.color = Color.green;
-
+        // Tile curr_tile = _gridController.GetComponent<GridController>().GetTileAtPosition(_x, _y);
+        // curr_tile._renderer.color = Color.green;
+        Debug.Log("hello?");
         //ReturnTile();
     }
 

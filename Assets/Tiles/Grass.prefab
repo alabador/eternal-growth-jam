@@ -56,6 +56,14 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4451477536699594702, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_Color.a
+      value: 0.050980393
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451477536699594702, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4872051903512574864, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
       propertyPath: m_Name
       value: Grass
