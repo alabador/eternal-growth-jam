@@ -258,10 +258,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8babf8e25361e2a43b3c629112c3bde6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 5
+  width: 3
   height: 3
   _tilePrefab: {fileID: 7136124391897935293, guid: 2375969c02548d848a35c44a8fa78903, type: 3}
   _cam: {fileID: 519420032}
+  _tileOptions:
+  - {fileID: 7497112268273588408, guid: ff16b7e35b92cd341a7bd5b60dc86387, type: 3}
+  - {fileID: 9176379021441836040, guid: 1633d0f65562709499b207fd2a4cbc38, type: 3}
+  - {fileID: 3780983421439894434, guid: 5f0d87e2b0a264342ad0803e58ddc0c2, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

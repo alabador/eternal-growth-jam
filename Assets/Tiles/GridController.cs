@@ -9,6 +9,7 @@ public class GridController : MonoBehaviour
     [SerializeField] private Tile _tilePrefab;
     [SerializeField] private Transform _cam;
 
+    [SerializeField] GameObject[] _tileOptions;
 
     private Tile[,] _tiles;
 
@@ -31,7 +32,7 @@ public class GridController : MonoBehaviour
                 spawnedTile.name = $"Tile {x} {y}";
 
                 bool isOffset = (x % 2 == 0 && y % 2 != 0) || (x % 2 != 0 && y % 2 == 0);
-                spawnedTile.Init(isOffset, x, y, gameObject);
+                spawnedTile.Init(x, y, gameObject);
 
                 _tiles[x, y] = spawnedTile; 
             }
