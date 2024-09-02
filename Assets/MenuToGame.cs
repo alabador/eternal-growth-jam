@@ -7,6 +7,6 @@ public class MenuToGame : MonoBehaviour
 {
     public void GoToGame()
     {
-        SceneManager.LoadScene("MainGame");
+        SceneManager.LoadScene("Tutorial");
     }
 }
